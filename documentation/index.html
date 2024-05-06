@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Marwa El-Manawy <marwa@elmanawy.info>" />
+        <title>Tiana - Resume/CV CMS</title>
+        <link href="assets/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/style.css" rel="stylesheet">
+        <script src="assets/jquery.min.js" ></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script>
+            $(document).ready(function () {
+                $(document).on("scroll", onScroll);
+
+                //smoothscroll
+                $('a[href^="#"]').on('click', function (e) {
+                    e.preventDefault();
+                    $(document).off("scroll");
+
+                    $('a').each(function () {
+                        $(this).removeClass('active');
+                    })
+                    $(this).addClass('active');
+
+                    var target = this.hash,
+                            menu = target;
+                    $target = $(target);
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top + 2
+                    }, 500, 'swing', function () {
+                        window.location.hash = target;
+                        $(document).on("scroll", onScroll);
+                    });
+                });
+            });
+
+            function onScroll(event) {
+                var scrollPos = $(document).scrollTop();
+                $('.nav a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('.nav a').removeClass("active");
+                        currLink.addClass("active");
+                    }
+                    else {
+                        currLink.removeClass("active");
+                    }
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="navbar navbar-default navbar-fixed-top">
+
+                <div class="navbar-inner menu_area">
+                    <div class="container">
+                        <a class="logo" href="http://elmanawy.info/" target="_blank" style="color: #000; font-weight: bold;">WeHelp</a>
+                        <ul class="nav">
+                            <li><a class="active" href="#introduction">Introduction <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#system">System</a></li>
+                            <li><a href="#requirements">Requirements</a></li>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#start">Getting Started</a></li>
+                            <li><a href="#change_log">Change Log</a></li>
+                            <li><a href="#support">Support Desk</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container content">
+
+
+                <div class="" id="introduction">
+                    <h1 class="page-header">Introduction</h1>
+                    <div class="intro-doc">
+                        <p>
+                            <strong style="color: #8dc63f;">Tiana - Resume/CV CMS</strong>
+
+                        </p>
+                        <ul>
+                            <li><strong>Item Name: </strong> Tiana - Resume/CV CMS</li>
+                            <li><strong>Item Version: </strong> v 1.0</li>
+                            <li><strong>Created: </strong> 21/1/2019</li>
+                            <li><strong>Author:  </strong> <a href="https://elmanawy.info/">Marwa El-Manawy</a></li>
+                            <li><strong>Support Questions:  </strong> <a href="mailto:support@elmanawy.info">support@elmanawy.info</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        <strong>Hi there!</strong>
+                        Thank you for buying my web application.<br>
+                        This documentation is to help you regarding each step of customization. <br> <br>
+                    </p>
+                    <span style="color: red; font-weight: bold;">Please read the documentation carefully to understand how this script is made and how to edit this properly and how you install script. </span> 
+                    <br><br>
+                    <p><b>Thank You ..</b> </p>
+                </div>
+
+                <!-- About section -->
+                <div class="block" id="about">
+                    <h1 class="page-header">About</h1>
+                    <p>
+                        <b>Now, Lets get started to tell you about Tiana.</b> <br>
+                        <a href="https://elmanawy.info/demo/tiana" target="_blank"><strong>Tiana - Resume/CV CMS</strong></a>
+                        is a PHP system developed to build your cv or resume,
+                        It comes with clean, secured, responsive, SEO friendly & trendy look design.
+                        You can easily add your Services, Experiences, Skills, Portfolios & Blogs without any coding skills.
+                        This script help you to promote yourself and your business.
+                        It's suitable for Freelancer, Coder, Photographer, Designer, ...
+                        <br>
+                    </p>
+                    <br><br>
+                    <p>
+                        Don't hesitate to contact me if you have inquiry or suggestions, and support at:
+                        <br>
+                        <a href="mailto:support@elmanawy.info">support@elmanawy.info</a>
+                    </p>
+                </div>
+
+                <!-- Features section -->
+                <div class="block" id="features">
+                    <h1 class="page-header">Features</h1>
+
+                    <div class="row placeholders">
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-mobile-phone"></i>
+                            </span>
+                            <h4>100% Responsive Design</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-umbrella"></i>
+                            </span>
+                            <h4>Clean Coding</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-flask"></i>
+                            </span>
+                            <h4>Easy Customization</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-comments-o"></i>
+                            </span>
+                            <h4>Great Support</h4>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <strong>Security</strong>
+                            <ul>
+                                <li>Totally secured system (SQL injection, XSS, CSRF)</li>
+                                <li>Built on powerful CodeIgniter Framework that has been tried and tested by millions of developers.</li>
+                                <li>Passwords are encrypted using PHPass library to make sure your data is safe.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Admin Panel</strong>
+                            <ul>
+                                <li>Flexible control panel system with full options.</li>
+                                <li>Only admin role can login admin panel.</li>
+                                <li>Change website settings(name, logo, favicon,..).</li>
+                                <li>Change website color(red, blue, orange, green,...).</li>
+                                <li>Change website Language(English or Arabic).</li>
+                                <li>Change General settings(appear and disappear widgets).</li>
+                                <li>Change website SEO settings (meta keywords, meta description).</li>
+                                <li>Change Contact information (email, phone,address,...).</li>
+                                <li>Change About you details (profile picture, description,summery,...).</li>
+                                <li>Change +20 Social links.</li>
+                                <li>Create unlimited articles and its categories and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited Projects and its categories and manage it (add, edit, delete, view).</li>
+                                <li>Create Work History and manage it (add, edit, delete, view).</li>
+                                <li>Create Education History and manage it (add, edit, delete, view).</li>
+                                <li>Create Skills and its categories and manage it (add, edit, delete, view).</li>
+                                <li>Create Testimonial and manage it (add, edit, delete, view).</li>
+                                <li>Create Clients and manage it (add, edit, delete, view).</li>
+                                <li>Create Services and manage it (add, edit, delete, view).</li>
+                                <li>View and Delete Messages from your clients(You will also receive this message at your email).</li>
+                                <li>Totally with this admin panel can manage and control every thing appear in website with full option.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Trendy website interface included.</strong>
+                            <ul>
+                                <li>Home page with
+                                    <ul>
+                                        <li>About You Summary.</li>
+                                        <li>Resume included(Work history, Education history, Skills).</li>
+                                        <li>Testimonial(Your clients feedback.</li>
+                                        <li>Slider for your clients.</li>
+                                        <li>Latest Blog posts.</li>
+                                        <li>Projects.</li>
+                                        <li>Contact information and social media links.</li>
+                                        <li>Contact form that helps your clients to reach or hire you.</li>
+                                    </ul>
+                                </li>
+                                <li>Single page for all blog posts with widgets(search post, categories, popular posts, latest posts)</li>
+                                <li>Single page for blog post with widgets(search post, categories, related posts, latest posts, tags)</li>
+                                <li>Single Page for Project with project details and related projects widget. </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Other Features</strong>
+                            <ul>
+                                <li>Easy to install and usability(without any coding knowledge needed).</li>
+                                <li>Awesome Design for Website and admin panel</li>
+                                <li>Fully Responsive for Website and admin panel</li>
+                                <li>Clean Code with hight performance.</li>
+                                <li>Easy Customization</li>
+                                <li>Friendly with SEO.</li>
+                                <li>High performance.</li>
+                                <li>More features will coming up.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Requirements section -->
+                <div class="block" id="system">
+                    <h1 class="page-header">System</h1>
+                    <ul>
+                        <li>Backend Framework: Built on CodeIgniter</li>
+                        <li>Frontend Framework: Built on Bootstrap</li>
+                        <li>Requires PHP 5.6+</li>
+                        <li>Supports MySQL, Mysqli.</li>
+                    </ul>
+                </div>
+
+                <!-- Requirements section -->
+                <div class="block" id="requirements">
+                    <h1 class="page-header">Requirements</h1>
+                    <p>
+                        You will need the following softwares to customize this template. <br><br>
+                    </p>
+                    1- Code Editing Software (eg: Netbeans, Sublime Text or Notepad)<br>
+                    2- Web Browser for testing (eg: Google Chrome or Mozilla Firefox)<br>
+                    3- FTP Tool to upload files to Server (eg: FileZilla)<br>
+                </div>
+
+                <!-- Installation section -->
+                <div class="block" id="installation">
+                    <h1 class="page-header">Installation</h1>
+
+                    <span style="color: red; font-weight: bold;">Please read the documentation carefully to understand how this script is made and how to edit this properly and how you install script. </span> 
+                    <br>
+                    This script based on <a href="http://getbootstrap.com/" class="links">bootstrap</a> framework for design using ( HTML, CSS, Javascript, JQuery ), and script based on <a href="https://www.codeigniter.com/" class="links">codeigniter</a> framework using ( PHP, MySql ) language .
+
+                    <p>You just need to follow this steps to keep an eye on your new website: </p>
+
+                    <h2 class="inside-title">1- Place files: You need to login your cPanel or whatever you're using to reach your server, Then upload the following folder content (root) to your public_html with your file manger or FTP.</h2>
+                    <p>you can also watch this if you find this difficult </p>
+                    <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/yvKwwYh2jr0" width="560"></iframe>
+                    <br><br>
+
+                    <h2 class="inside-title">2- Grap and upload database:</h2>
+                    <p>You can find the database file in (root) folder under the name of (database.sql), now you should visit your PHPmyadmin client on your dear server</p>
+                    <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/YbIn--iNmKE" width="560"></iframe>                        <br><br>
+
+                    <h4>Quick steps:</h4>
+                    1- change your configuration data that located in <b>application/config/database.php</b><br><br>
+                    <img src="assets/images/database.png"><br><br>
+
+                    2- To integrate Disqus on your website follow this link explain the steps.<br><br>
+                    <a href="https://help.disqus.com/installation/adding-disqus-to-your-site">https://help.disqus.com/installation/adding-disqus-to-your-site</a><br><br>
+                    <img src="assets/images/comment.png"><br>
+
+                    3- For Translation files, This locations for each language:<br>
+                    <b>English:</b> application/language/english/.. <br>
+                    <b>Arabic:</b> application/language/arabic/..<br>
+                    
+                    Here You can edit the translation if you need.
+                </div>
+
+
+                <!-- Getting stat section -->
+                <div class="block" id="start">
+                    <h1 class="page-header">Getting Start</h1>
+                    <p>You just need to follow this steps to keep an eye on your new website: </p>
+                    <br>
+                    <p>
+                        go to this link before you go on: 
+                        <br><br>
+                        http://yourDomainName.com/admin<br>
+                        <br>
+                        <img class="module-pics" src="assets/images/login.png">
+                        <br>
+
+                        Type your admin username and password: <br><br>
+
+                        <strong>Email:</strong> admin@admin.com<br>
+
+                        <strong>Password:</strong> 123456<br>
+                        <br>
+                        and follow those instructions 
+                        <br>
+                    </p>
+                </div>
+
+                <div class="block" id="change_log">
+                    <h1 class="page-header">Change Log</h1>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 1.0 –(Released:  March 2019):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Initial Version
+                        </p>
+                    </div>
+                </div>
+                <div class="block" id="support">
+                    <h1 class="page-header">Support</h1>
+                    <p>
+                        - If you have any questions feel free to contact us at support@elmanawy.info <br>
+                        - If you need any modifications just contact support at support@elmanawy.info <br>
+                    </p>
+                    <br>
+                    <strong>Reach US: </strong><br>
+                    <a target="_blank" href="https://elmanawy.info/smarwa/tore"><img src="https://elmanawy.info/demo/banners/social_icons/marwa.png"></a>
+                    <a target="_blank" href="https://www.facebook.com/marwa.elmanawy.info"><img src="https://elmanawy.info/demo/banners/social_icons/facebook.png"></a>
+                    <a target="_blank" href="https://twitter.com/marwa_elmanawy"><img src="https://elmanawy.info/demo/banners/social_icons/twitter.png"></a>
+                    <a target="_blank" href="https://plus.google.com/+marwaelmenawy"><img src="https://elmanawy.info/demo/banners/social_icons/google.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/marwa-el-manawy-b76344a0"><img src="https://elmanawy.info/demo/banners/social_icons/linkedin.png"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCTSXnKoLgfZZk2MN_jLUOnA"><img src="https://elmanawy.info/demo/banners/social_icons/youtube.png"></a>
+                    <a target="_blank" href="https://www.instagram.com/marwa.elmanawy"><img src="https://elmanawy.info/demo/banners/social_icons/instagram.png"></a>
+                    <a target="_blank" href="https://github.com/marwaelmanawy"><img src="https://elmanawy.info/demo/banners/social_icons/github.png"></a>
+                    <br><br>
+                    <p><b>Best Regards, <a href="https://elmanawy.info/marwa/store">Marwa El-Manawy</a></b></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

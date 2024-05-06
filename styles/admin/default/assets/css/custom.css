@@ -1,0 +1,178 @@
+.page-container .main-content .page-title .breadcrumb-env {
+    float: left;
+    padding-left: 30px;
+}
+.list-inline {
+    display: inline-block;
+}
+.page-container .main-content .page-title .breadcrumb-env .breadcrumb {
+    display: inline-block;
+}
+.required{
+    color: red;
+}
+.form-description{
+    height: 150px !important;
+}
+.droppable-area{
+    position: relative;
+}
+.upload-image {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+}
+.img-small{
+    height: 28px;
+}
+.center-cont{
+    text-align: center;
+}
+i.be-icon {
+    background-color: #76bf3c;
+    color: #ffffff;
+    font-size: 26px;
+    border-radius: 4px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+}
+.ico {
+    display: inline-block;
+    overflow: hidden;
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+}
+.i-easy {
+    background-position: 0 0;
+    width: 14px;
+    height: 13px;
+}
+.i-medium {
+    background-position: -15px 0;
+    width: 14px;
+    height: 13px;
+}
+.i-hard {
+    background-position: -30px 0;
+    width: 14px;
+    height: 13px;
+}
+.nav-tabs li a i {
+    display: block;
+    color: #999;
+    margin-bottom: 5px;
+}
+.tabs-vertical-env .nav.tabs-vertical li>a {
+    text-align: left !important;
+}
+.choose-color{
+    position: relative;
+    width: 40px;
+    line-height: 1;
+    height: 40px;
+}
+.choose-color label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.btn-default.choose-color{
+    background-color: #11d6f0;
+    border-color: #11d6f0;
+    color: #fff;
+}
+.btn-blue.choose-color{
+    background-color: #3586e8;
+    border-color: #3586e8;
+    color: #fff;
+}
+.btn-red.choose-color{
+    background-color: #ff222a;
+    border-color: #ff222a;
+    color: #fff;
+}
+.btn-purple.choose-color{
+    background-color: #a97afd;
+    border-color: #a97afd;
+    color: #fff;
+}
+.btn-orange.choose-color{
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+    color: #fff;
+}
+.btn-pinky.choose-color{
+    background-color: #e83e8c;
+    border-color: #e83e8c;
+    color: #fff;
+}
+.btn-yellow.choose-color{
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+}
+.btn-teal.choose-color{
+    background-color: #20c997;
+    border-color: #20c997;
+    color: #fff;
+}
+.padd-top-7{
+    padding-top: 7px;
+}
+textarea.form-control{
+    height: 80px;
+}
+.panel .panel-heading>.panel-options a {
+    color: #fff !important;
+}
+.login-page {
+    background: #f7f9fc;
+}
+.login-area {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+}
+.login-area h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1ec8f7;
+    padding: 20px;
+}
+.commom-form-style h3 i {
+    margin-bottom: 15px;
+    display: block;
+    color: #1ec8f7;
+    font-size: 60px;
+}
+.login-page .login-form .login-header {
+    margin-bottom: 25px;
+}
+.form-control:focus {
+    border-color: #40bbea;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.login-page .login-form .form-group .btn {
+    text-transform: uppercase;
+}

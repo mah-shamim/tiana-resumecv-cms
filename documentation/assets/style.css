@@ -1,0 +1,174 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  /*padding-top: 50px;*/
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+    background-color: #dddddd;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+.logo{
+   margin: 15px 0;
+   display: inline-block;
+   float: left;
+   color: #333;
+}
+.logo img{
+    width: 100%;
+}
+.nav>li{
+    display: inline-block;
+    margin: 10px 0;
+}
+.nav>li a {
+    border-radius: 3px;
+    display: block;
+    white-space: nowrap;
+    padding: 6px 11px 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    color: #333;
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav>li>a.active {
+    text-decoration: none;
+    background-color: #30373e;
+    color: #fff;
+}
+.content{
+    margin-top: 90px;
+}
+.block ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+    margin-top: 0;
+    font-size: 28px;
+    color: #428BCA;
+}
+.block {
+    margin-bottom: 50px;
+    width: 100%;
+}
+span.img-responsive {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: #428BCA;
+    font-size: 60px;
+    padding: 32px 0;
+    border-radius: 100%;
+    margin: auto;
+    border: 5px solid #f1f1f1;
+}
+h2.inside-title {
+    font-size: 18px;
+}
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+img.module-pics {
+    max-width: 100%;
+    margin: 20px 0;
+}
+.intro-doc {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.block ul ul {
+    padding-left: 20px !important;
+}
+li {
+    margin-bottom: 10px;
+}
+.block li strong {
+    margin-bottom: 15px;
+    display: block;
+}

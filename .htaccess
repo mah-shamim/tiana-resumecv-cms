@@ -1,0 +1,18 @@
+#RewriteEngine On
+#RewriteBase /
+#RewriteCond %{REQUEST_URI} ^/system.*
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?/$1 [L]
+#RewriteRule (.*)\.xml(.*) $1.php?$2 [nocase]
+
+#RewriteEngine on
+#RewriteBase /marocms-new
+#RewriteCond $1 !^(index\.php|images|robots\.txt|style|cdn|check\.php)
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+RewriteEngine on
+#RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]

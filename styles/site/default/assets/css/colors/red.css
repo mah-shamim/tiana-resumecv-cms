@@ -1,0 +1,183 @@
+/*
+Template Name: Mulan / CV Template + RTL
+Template URI: http://elmanawy.info/demo/mulan
+Description: Mulan for resume / cv / portfolio template that's suitable for freelanner and anyone want to create online portflolio
+Author: Marwa El-Manawy
+Author URL: https://elmanawy.info
+Version: 1.0
+*/
+a {
+    color: #ff222a;
+}
+a:hover {
+    color: #ff222a;
+}
+.pagination .paginate_button.active a  {
+    background-color: #ff222a;
+    color: #ffffff;
+}
+.title-main-page h4:before {
+    border-color: #ff222a;
+}
+.title-main-page p:after {
+    border-bottom: 5px solid #ff222a;
+}
+.sub-title h6:before {
+    background: #ff222a;
+}
+.section-head h4:before {
+    background: #ff222a;
+}
+#preloader-circle span {
+    border: 8px solid #ff222a;
+}
+.site-title span {
+    color: #ff222a;
+}
+.header-main-menu li a i {
+    background-color: #ff222a;
+}
+.responsive-header  {  
+    color: #ff222a;
+}
+.bout-list-summry li .icon-info{
+    background: #ff222a;
+    border: 1px solid #ff222a;
+}
+.special-block-bg::before {
+    border-color: #ff222a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff222a;
+}
+.special-block-bg::after {
+    border-color: rgba(0, 0, 0, 0) #ff222a #ff222a rgba(0, 0, 0, 0);
+}
+.service-block:hover h4{
+    color: #ff222a;
+}
+.overlay {
+    background: linear-gradient(-45deg,rgba(88, 195, 255,.8) 0,#ff222a 40%,rgb(176, 236, 243) 100%);
+}
+.pulse-icon a {
+    color: #ff222a;
+}
+.counter-block::before {
+    border-color: #ff222a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff222a;
+}
+.counter-block::after {
+    border-color: rgba(0, 0, 0, 0) #ff222a #ff222a rgba(0, 0, 0, 0);
+}
+.counter-block i {
+    color: #ff222a;
+}
+.testimonial-review:before {
+    color: #ff222a;
+}
+.owl-dot.active span{
+    background: #ff222a;
+}
+.timeline.currecnt .timeline-icon:after, .main-timeline .timeline:hover  .timeline-icon:after{
+    background: #ff222a;
+}
+.main-timeline .timeline:hover .title{color: #ff222a; }
+.progress-bar {
+    background-color: #ff222a;
+}
+.filter-tabs .active-filter, .filter-tabs .fil-cat:focus, .filter-tabs .fil-cat:hover {
+    color: #ff222a;
+}
+.label-portfolio::before {
+    border-color: #ff222a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff222a;
+}
+.label-portfolio > span {
+    color: #ff222a;
+}
+.blog-grid-flex .blog-item:hover .blog-article > .article-link > a {
+    background-color: #ff222a !important;
+}
+.blog-grid-flex .blog-item-quote .article-img::after {
+    background-color: #ff222a;
+}
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus{
+    border-bottom: 1px solid #ff222a;
+}
+.bt-submit {
+    background: #ff222a;
+}
+.contact-icon i {
+    background: #ff222a;
+}
+.social-media-block::after {
+    border-color: rgba(0, 0, 0, 0) #ff222a #ff222a rgba(0, 0, 0, 0);
+}
+.social-media-block::before {
+    border-color: #ff222a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff222a;
+}
+.social-media-block a{
+    color: #ff222a;
+}
+.social-media-block a:hover{
+    background: #ff222a;
+}
+.post-meta li:hover, .post-meta li a:hover{
+    color: #ff222a;
+}
+#posts-nav li a:hover {
+    color: #ff222a;
+}
+.comment-by a.reply:hover,
+.comment-by a.reply:hover i {
+    background-color: #ff222a;
+}
+.search-blog-input input:hover,  .search-blog-input input:focus{
+    border: 1px solid #ff222a;
+}
+.widget .search-blog-input .input button{
+    color: #ff222a;
+}
+.widget-text h5 a:hover {
+    color: #ff222a;
+}
+.tagcloud a:hover{
+    background-color: #ff222a;
+    border: 1px solid #ff222a;
+}
+.error-content .error-message h2 {
+    color: #ff222a;
+}
+.error-content .error-message h2 {
+    color: #ff222a;
+}
+.error-content .form-error-search .btn-search {
+    background-color: #ff222a;
+}
+.error-content .description a {
+    color: #ff222a
+}
+.profile-picture-block {
+    background-color: rgba(255, 34, 42, 1);
+}
+.my-photo {
+    background-color: rgba(255, 34, 42, 1);
+}
+.header-main-menu li a:hover, .header-main-menu li a.active {
+    background-color: rgba(255, 34, 42, 0.18);
+}
+.portfolio-grid .portfolio-item:hover .portfolio-data {
+    background-color: rgba(255, 34, 42, 0.65);
+}
+.portfolio-head-content {
+    background-color: rgba(255, 34, 42, 0.65);
+}
+.blog-grid-flex .blog-article .comment-like {
+    background-color: rgba(255, 34, 42, 0.6);
+}
+body::-webkit-scrollbar-thumb,
+.sub-page::-webkit-scrollbar-thumb,
+.header::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 34, 42, 0.30);
+}
+img.responsive-logo {
+    border: 3px solid rgba(255, 34, 42, 0.30);
+}
